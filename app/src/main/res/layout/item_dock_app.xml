@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="56dp"
+    android:layout_height="56dp"
+    android:layout_marginHorizontal="4dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="@drawable/item_dock_focus_selector"
+    android:defaultFocusHighlightEnabled="false">
+
+    <ImageView
+        android:id="@+id/ivDockIcon"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:contentDescription="Dock App Icon"
+        android:scaleType="fitCenter"
+        tools:src="@android:drawable/sym_def_app_icon" />
+
+    <!-- Keyboard Shortcut Key Badge (1-9) -->
+    <TextView
+        android:id="@+id/tvShortcutBadge"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="2dp"
+        android:gravity="center"
+        android:background="@drawable/bg_badge"
+        android:textColor="@color/white"
+        android:textSize="9sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        tools:text="1"
+        tools:visibility="visible" />
+
+    <!-- Running Dot Indicator -->
+    <View
+        android:id="@+id/vRunningDot"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/bg_badge"
+        android:visibility="gone" />
+
+</FrameLayout>

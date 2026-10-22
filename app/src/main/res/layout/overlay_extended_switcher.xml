@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/extendedSwitcherRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="8dp">
+
+    <!-- Floating Dock Container -->
+    <LinearLayout
+        android:id="@+id/dockPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="300dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_floating_panel"
+        android:paddingTop="8dp"
+        android:paddingBottom="6dp"
+        android:paddingHorizontal="14dp"
+        android:elevation="16dp">
+
+        <!-- Header Row (Clean & minimal, removed redundant Home & Close buttons) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="6dp">
+
+            <!-- Back Button -->
+            <ImageButton
+                android:id="@+id/btnOverlayBack"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/item_dock_focus_selector"
+                android:src="@drawable/ic_back"
+                android:contentDescription="@string/back_button"
+                android:padding="8dp"
+                android:focusable="true"
+                android:clickable="true" />
+
+            <!-- Title & Status -->
+            <TextView
+                android:id="@+id/tvSwitchTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/recent_apps_title"
+                android:textColor="@color/accent_glow"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <!-- Open Launcher / All Apps Button -->
+            <ImageButton
+                android:id="@+id/btnOverlayApps"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/item_dock_focus_selector"
+                android:src="@drawable/ic_apps"
+                android:contentDescription="All Apps"
+                android:padding="8dp"
+                android:focusable="true"
+                android:clickable="true" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/border_glass" />
+
+        <!-- Horizontal Scrollable List of Recent Background Apps -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvRecentApps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp"
+            android:clipToPadding="false"
+            tools:listitem="@layout/item_recent_app" />
+
+        <!-- Shortcut & Guidance Hint -->
+        <TextView
+            android:id="@+id/tvShortcutHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="2dp"
+            android:text="@string/switch_bar_hint"
+            android:textColor="@color/text_muted"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

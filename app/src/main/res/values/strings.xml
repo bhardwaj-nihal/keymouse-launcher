@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KeyMouse Launcher</string>
+    <string name="search_hint">Type to search apps...</string>
+    <string name="favorites_title">Pinned Favorites</string>
+    <string name="all_apps_title">All Applications</string>
+    <string name="recent_apps_title">Recent Apps</string>
+    <string name="switch_bar_hint">Alt+Tab to cycle • 1-9 to switch • Esc to close</string>
+    <string name="open_app">Open</string>
+    <string name="pin_to_favorites">Pin to Favorites</string>
+    <string name="unpin_from_favorites">Remove from Favorites</string>
+    <string name="pin_to_dock">Pin to Dock</string>
+    <string name="unpin_from_dock">Remove from Dock</string>
+    <string name="move_left">Move Left</string>
+    <string name="move_right">Move Right</string>
+    <string name="app_info">App Info</string>
+    <string name="uninstall">Uninstall</string>
+    <string name="settings_title">Launcher Settings</string>
+    <string name="floating_service_desc">Overlay Switcher Bar service</string>
+    <string name="accessibility_service_desc">Enables keyboard/mouse global navigation (Back, Home, Recents)</string>
+    <string name="perm_overlay_needed">Please enable "Display over other apps" to allow the floating switcher bar.</string>
+    <string name="perm_usage_needed">Please enable "Usage Access" to detect and show open/recent apps in the switcher.</string>
+    <string name="perm_acc_needed">Enable Accessibility Service for global Back/Home mouse navigation.</string>
+    <string name="enable_overlay">Enable Overlay</string>
+    <string name="enable_usage">Enable Usage Access</string>
+    <string name="enable_accessibility">Enable Accessibility</string>
+    <string name="open_settings">Settings</string>
+    <string name="launcher_status_ready">Launcher Ready</string>
+    <string name="no_apps_found">No apps found</string>
+    <string name="home_button">Home</string>
+    <string name="back_button">Back</string>
+    <string name="recents_button">Recents</string>
+</resources>
